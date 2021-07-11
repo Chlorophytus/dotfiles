@@ -95,6 +95,7 @@ bar {
         statusline #ffffff
         background #657B83F0
         inactive_workspace #07364240 #07364280 #ffffff
+        urgent_workspace #CB4B1640 #CB4B1680 #ffffff
     }
 }
 
