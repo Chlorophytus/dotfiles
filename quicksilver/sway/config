@@ -7,12 +7,7 @@ set $down j
 set $up k
 set $right l
 set $term alacritty
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
-
-################################################################################
-# Background
-################################################################################
-output * bg /home/accelshark/Pictures/Final16_9.png fill
+set $menu bemenu-run
 
 ################################################################################
 # Idler (3mins until autolock)
@@ -22,16 +17,16 @@ exec swayidle -w \
          timeout 360 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -f -c 000000'
 
+output * bg /home/accelshark/Pictures/Commissions/photo_2019-01-16_07-48-56.jpg center 
+
 ################################################################################
 # Keybinds
 ################################################################################
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec $menu
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86MonBrightnessUp exec light -A 10
+bindsym XF86MonBrightnessDown exec light -U 10
 floating_modifier $mod normal
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
@@ -86,18 +81,7 @@ bindsym $mod+minus scratchpad show
 ################################################################################
 # Sway bar
 ################################################################################
-bar {
-    font pango:agave Nerd Font Mono 15
-    position bottom
-    tray_output none
-    status_command i3status-rs 
-    colors {
-        statusline #ffffff
-        background #657B83F0
-        inactive_workspace #07364240 #07364280 #ffffff
-        urgent_workspace #CB4B1640 #CB4B1680 #ffffff
-    }
-}
+exec waybar
 
 ################################################################################
 # Font
