@@ -17,7 +17,7 @@ exec swayidle -w \
          timeout 360 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -f -c 000000'
 
-output * bg /home/accelshark/Pictures/Commissions/photo_2019-01-16_07-48-56.jpg center 
+output * bg /home/accelshark/Pictures/Hips-Wallpaper16_9.png center 
 
 ################################################################################
 # Keybinds
@@ -27,6 +27,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec $menu
 bindsym XF86MonBrightnessUp exec light -A 10
 bindsym XF86MonBrightnessDown exec light -U 10
+bindsym Print exec /opt/grimshot --notify save screen
 floating_modifier $mod normal
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
