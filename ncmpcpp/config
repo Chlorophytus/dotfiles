@@ -1,0 +1,2 @@
+mpd_host =	"~/.config/mpd/socket"
+mpd_music_dir =	"~/Music"
