@@ -1,3 +1,4 @@
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 ################################################################################
 # Binds
 ################################################################################
@@ -9,7 +10,10 @@ set $right l
 set $term alacritty
 set $menu bemenu-run
 
-
+bindsym XF86AudioPlay exec "playerctl play-pause"
+bindsym XF86AudioStop exec "playerctl stop"
+bindsym XF86AudioNext exec "playerctl next"
+bindsym XF86AudioPrev exec "playerctl previous"
 ################################################################################
 # Compose key so I can talk to English learners natively
 ################################################################################
@@ -23,7 +27,7 @@ exec swayidle -w \
          timeout 360 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -f -c 000000'
 
-output * bg /home/accelshark/Pictures/Hips-Wallpaper16_9.png fit 
+output * bg /home/accelshark/Pictures/Final-Wallpaper16_9.png fit 
 
 ################################################################################
 # Keybinds
