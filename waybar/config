@@ -95,7 +95,7 @@
         "tooltip": false
     },
     "memory": {
-        "format": "{used}/{avail} GB "
+        "format": "{used}/{total} GB "
     },
     "temperature": {
         "interval": 3,
