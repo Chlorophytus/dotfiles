@@ -10,12 +10,12 @@ set tabstop=2
 
 " We need these Plugs
 call plug#begin(stdpath('data') . '/plugged')
-  Plug 'elixir-editors/vim-elixir'
-  Plug 'neovim/nvim-lspconfig'
+	Plug 'elixir-editors/vim-elixir'
+	Plug 'neovim/nvim-lspconfig'
 	Plug 'sbdchd/neoformat'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'scalameta/nvim-metals'
-  call plug#end()
+	call plug#end()
 
 " Centralized Lua loading file.
 " Place in .config/nvim/lua/chlorovim.lua
