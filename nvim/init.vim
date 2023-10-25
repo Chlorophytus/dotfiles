@@ -15,9 +15,9 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'sbdchd/neoformat'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'scalameta/nvim-metals'
+	Plug 'RaafatTurki/hex.nvim'
 	call plug#end()
 
 " Centralized Lua loading file.
 " Place in .config/nvim/lua/chlorovim.lua
 lua require('chlorovim')
-

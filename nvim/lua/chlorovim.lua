@@ -31,4 +31,6 @@ api.nvim_create_autocmd("FileType", {
 		group = nvim_metals_group,
 	}
 )
-	
+
+-- Setup Python
+require('lspconfig').pylsp.setup({})
