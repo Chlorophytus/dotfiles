@@ -34,3 +34,6 @@ api.nvim_create_autocmd("FileType", {
 
 -- Setup Python
 require('lspconfig').pylsp.setup({})
+
+-- Setup hex editing
+require('hex').setup()
