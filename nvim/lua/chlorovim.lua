@@ -40,7 +40,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 tree.setup({
   auto_install = true,
   highlight = {
-  enable = true,
+    enable = true,
   },
 })
 
