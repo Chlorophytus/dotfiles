@@ -7,26 +7,27 @@ set smartindent
 set visualbell
 set shiftwidth=2
 set tabstop=2
+set expandtab
 
 " We need these Plugs
 call plug#begin(stdpath('data') . '/plugged')
-	Plug 'neovim/nvim-lspconfig'
-	Plug 'RaafatTurki/hex.nvim'
-	Plug 'sbdchd/neoformat'
-	Plug 'nvim-lua/plenary.nvim'
-	Plug 'maxmx03/solarized.nvim'
-	
-	Plug 'hrsh7th/cmp-nvim-lsp'
-	Plug 'hrsh7th/cmp-buffer'
-	Plug 'hrsh7th/cmp-path'
-	Plug 'hrsh7th/cmp-cmdline'
-	Plug 'hrsh7th/nvim-cmp'
-	Plug 'hrsh7th/cmp-vsnip'
-	Plug 'hrsh7th/vim-vsnip'
+  Plug 'neovim/nvim-lspconfig'
+  Plug 'RaafatTurki/hex.nvim'
+  Plug 'sbdchd/neoformat'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'maxmx03/solarized.nvim'
 
-	Plug 'scalameta/nvim-metals'
-	Plug 'elixir-editors/vim-elixir'	
-	call plug#end()
+  Plug 'hrsh7th/cmp-nvim-lsp'
+  Plug 'hrsh7th/cmp-buffer'
+  Plug 'hrsh7th/cmp-path'
+  Plug 'hrsh7th/cmp-cmdline'
+  Plug 'hrsh7th/nvim-cmp'
+  Plug 'hrsh7th/cmp-vsnip'
+  Plug 'hrsh7th/vim-vsnip'
+
+  Plug 'scalameta/nvim-metals'
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  call plug#end()
 
 " Centralized Lua loading file.
 " Place in .config/nvim/lua/chlorovim.lua
@@ -34,3 +35,4 @@ lua require('chlorovim')
 
 " Use Solarized colors
 colorscheme solarized
+hi ColorColumn guibg=darkred
