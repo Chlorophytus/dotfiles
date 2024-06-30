@@ -48,7 +48,10 @@ tree.setup({
 lsp.clangd.setup({ capabilities = capabilities, })
 
 -- Setup Elixir
-lsp.elixirls.setup({ capabilities = capabilities, })
+lsp.elixirls.setup({
+  cmd = { 'elixir-ls' },
+  capabilities = capabilities,
+})
 
 -- Setup Gleam
 lsp.gleam.setup({ capabilities = capabilities, })
