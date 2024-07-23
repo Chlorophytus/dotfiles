@@ -57,7 +57,7 @@ lsp.elixirls.setup({
 lsp.gleam.setup({ capabilities = capabilities, })
 
 -- Setup Lua
- lsp.lua_ls.setup({ capabilities = capabilities, })
+lsp.lua_ls.setup({ capabilities = capabilities, })
 
 -- Set up Metals
 local metals = require('metals')
@@ -73,3 +73,6 @@ vim.api.nvim_create_autocmd("FileType", {
 
 -- Setup Python
 lsp.pylsp.setup({ capabilities = capabilities, })
+
+-- Setup Rust
+lsp.rust_analyzer.setup({ capabilities = capabilities, })
