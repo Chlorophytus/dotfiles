@@ -1,5 +1,5 @@
 -- Colors
-require('solarized').setup({ transparent = true, })
+require('solarized').setup({ transparent = { enabled = true, } })
 
 -- Setup hex editing
 require('hex').setup()
