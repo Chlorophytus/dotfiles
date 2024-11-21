@@ -78,4 +78,7 @@ lsp.pylsp.setup({ capabilities = capabilities, })
 lsp.rust_analyzer.setup({ capabilities = capabilities, })
 
 -- Setup Discord RPC
-require('cord').setup({buttons = {}})
+require('cord').setup({
+  editor = { tooltip = 'I am coding' },
+  buttons = {},
+})
