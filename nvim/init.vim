@@ -27,6 +27,8 @@ call plug#begin(stdpath('data') . '/plugged')
 
   Plug 'scalameta/nvim-metals'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  Plug 'vyfor/cord.nvim', {'do': './build'}
+
   call plug#end()
 
 " Centralized Lua loading file.
