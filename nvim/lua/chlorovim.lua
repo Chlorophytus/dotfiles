@@ -82,3 +82,6 @@ require('cord').setup({
   editor = { tooltip = 'I am coding' },
   buttons = {},
 })
+
+-- Setup Neogit
+require('neogit').setup({})

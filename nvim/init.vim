@@ -16,6 +16,8 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'sbdchd/neoformat'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'maxmx03/solarized.nvim'
+  Plug 'NeogitOrg/neogit'
+  Plug 'scalameta/nvim-metals'
 
   Plug 'hrsh7th/cmp-nvim-lsp'
   Plug 'hrsh7th/cmp-buffer'
@@ -25,7 +27,6 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'hrsh7th/cmp-vsnip'
   Plug 'hrsh7th/vim-vsnip'
 
-  Plug 'scalameta/nvim-metals'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'vyfor/cord.nvim', {'do': './build'}
 
