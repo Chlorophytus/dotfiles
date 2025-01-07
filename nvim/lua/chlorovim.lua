@@ -34,6 +34,14 @@ cmp.setup.cmdline({'/', '?'}, {
   }
 })
 
+cmp.setup.cmdline(':', {
+  sources = cmp.config.sources({
+    { name = 'path' }
+  }, {
+    { name = 'cmdline' }
+  })
+})
+
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- Setup Tree Sitter syntax highlighting plugins
