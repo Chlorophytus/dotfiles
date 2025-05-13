@@ -28,7 +28,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'hrsh7th/vim-vsnip'
 
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-  Plug 'vyfor/cord.nvim', {'do': './build'}
+"  Plug 'vyfor/cord.nvim', {'do': './build'}
 
   call plug#end()
 
